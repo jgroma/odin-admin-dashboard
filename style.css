@@ -6,6 +6,7 @@
 .main-container {
     display: grid;
     grid-template-columns: 300px 4fr;
+    grid-template-rows: 200px;
     font-size: 24px;
 }
 
@@ -33,7 +34,9 @@ li {
     grid-template-columns: auto 1fr;
     align-items: center;
     grid-gap: 20px;
+    margin-bottom: 20px;
 }
+
 
 .header {
     background-color: brown;
@@ -41,7 +44,46 @@ li {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 20px 40px 10px 40px;
+    grid-template-rows: 50px 1fr;
+    padding: 20px 60px 10px 40px;
+    grid-gap: 30px;
+}
+
+.header-first-row {
+    /*width: 100%;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-column: 1 / span 2;
+}
+
+.search-bar-container {
+    display: flex;
+    width: 60%;
+    gap: 20px;
+}
+
+.search-bar {
+    height: 20px;
+    width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+
+    border: none;
+    border-radius: 25px;
+    height: 30px;
+}
+
+.user-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 /*.header-first-row {
@@ -50,12 +92,12 @@ li {
 
 }*/
 
-.header-first-row {
+/*.header-first-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    grid-gap: 400px;
+    grid-gap: 350px;
 }
 
 .search-bar {
@@ -63,7 +105,7 @@ li {
     width: 100%;
     max-width: 800px;
     min-width: 200px;
-    /*flex-shrink: 1;*/
+
     border-radius: 25px;
 }
 
@@ -79,27 +121,31 @@ li {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .user-container {
     display: flex;
-    gap: 15px;
-    /*grid-column: 2 / 3;
-    grid-row: 1 / 2;*/
-    /*justify-content: flex-end;*/
-}
+    gap: 30px;
+    align-items: center;
+   
+}*/
 
 .header-second-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
 
 }
+
 
 .user-greeting {
     display: flex;
     gap: 15px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    align-items: center;
 
 }
 
@@ -114,6 +160,19 @@ li {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+button {
+    background-color: lightseagreen;
+    text-decoration: none;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    font-size: 0.8em;
+    border-radius: 20px;
+    
 }
 
 .main-content {
