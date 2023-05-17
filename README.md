@@ -1,7 +1,11 @@
 # odin-admin-dashboard
 
+The dashboard logo is taken from pixelied  
 
-All icons are taken from Material Design Icons
+Credit  
+-pixelied-social-distortion by [author unknown](https://svg-files.pixelied.com/edd6e1cc-e599-42e7-9d6c-20c1268e2e02/pixelied-social-distortion.svg)
+
+All icons are taken from Pictogrammers (Material Design Icons)
 
 Credits  
 -magnify by [Google](https://pictogrammers.com/library/mdi/icon/magnify/)  
@@ -19,3 +23,10 @@ Credits
  -help-box by [Austin Andrews](https://pictogrammers.com/library/mdi/icon/help-box/)  
 -shield-check by [Google](https://pictogrammers.com/library/mdi/icon/shield-check/)  
 
+All avatar icons are taken from SVG Repo  
+
+Credits  
+-Avatar Lazybones Sloth by [Laura Reen](https://www.svgrepo.com/svg/420331/avatar-lazybones-sloth)  
+-Avatar Einstein Professor by [Laura Reen](https://www.svgrepo.com/svg/420347/avatar-einstein-professor)  
+-Artist Avatar Marilyn by [Laura Reen](https://www.svgrepo.com/svg/420317/artist-avatar-marilyn)  
+-Avatar Batman Comics by [Laura Reen](https://www.svgrepo.com/svg/420360/avatar-batman-comics)

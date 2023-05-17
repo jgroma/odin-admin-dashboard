@@ -20,7 +20,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     display: grid;
-    grid-template: 50px 300px 200px / 1fr;
+    grid-template: 80px 300px 200px / 1fr;
     grid-gap: 50px;
     padding-left: 30px;
 }
@@ -31,6 +31,16 @@
     grid-template-columns: auto 1fr;
     align-items: center;
     grid-gap: 15px;
+    padding-top: 20px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    margin-left: -18px;
+}
+
+.logo {
+    width: 3.5em;
+    height: 3.5em;
+    filter: invert(100%);
 }
 
 li {
@@ -125,12 +135,27 @@ box-shadow: 16px -10px 15px 0px #000000;
     gap: 40px;
 }
 
+.user-icon-small {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.user-name-small {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 
 .header-second-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column: 1 / span 2;
     grid-row: 2 / 3;
+}
+
+.user-icon-big {
+    height: 3.5em;
+    width: 3.5em;
 }
 
 
@@ -141,6 +166,11 @@ box-shadow: 16px -10px 15px 0px #000000;
     grid-row: 1 / 2;
     align-items: center;
 
+}
+
+.user-name-big {
+    font-size: 0.8em;
+    font-weight: 600;
 }
 
 .greeting-wrapper {
