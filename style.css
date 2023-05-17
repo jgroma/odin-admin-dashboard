@@ -1,9 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/*Color pallete styling*/
+:root {
+    --sidebar-color: #3C1518;
+    --header-color: #F2F3AE;
+    --main-content-background: #D58936;
+    --border-color: #69140E;
+    --p-text-color: rgb(88, 88, 88);
+}
+
+h1 {
+    font-size: 1.3rem
+}
 
 
 .main-container {
@@ -20,7 +31,7 @@
 /*SIDEBAR*/
 
 .sidebar {
-    background-color: aqua;
+    background-color: var(--sidebar-color);
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     display: grid;
@@ -29,16 +40,25 @@
     padding-left: 30px;
 }
 
+li>span {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
 
 .dashboard-logo {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     grid-gap: 15px;
+
     padding-top: 20px;
     padding-right: 100px;
     margin-bottom: 20px;
     margin-left: -18px;
+    color: white;
+    font-weight: 900;
 }
 
 .logo {
@@ -46,6 +66,7 @@
     height: 3.5em;
     filter: invert(100%);
 }
+
 
 li {
     list-style: none;
@@ -68,11 +89,11 @@ li {
 .header-container {
    grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: brown;
+    background-color: var(--main-content-background);
 }
 
 .header {
-    background-color: brown;
+    background-color: var(--header-color);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
@@ -101,10 +122,6 @@ box-shadow: 16px -10px 15px 0px #000000;
     gap: 20px;
 }
 
-/*.search-icon {
-    background-image: url(./img/icons/magnify.svg);
-    background-size: contain;
-}*/
 
 .search-icon {
     width: 2rem;
@@ -117,14 +134,14 @@ box-shadow: 16px -10px 15px 0px #000000;
 }
 
 .search-bar {
-    height: 20px;
+    height: 30px;
     width: 100%;
     max-width: 800px;
     min-width: 200px;
 
     border: none;
     border-radius: 25px;
-    height: 30px;
+    background-color: var(--main-content-background);
 }
 
 .user-wrapper {
@@ -172,16 +189,21 @@ box-shadow: 16px -10px 15px 0px #000000;
 
 }
 
+.greeting {
+    font-size: 0.89rem;
+    font-weight: 900;
+}
+
 .user-name-big {
-    font-size: 0.8em;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 900;
 }
 
 .greeting-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 11px;
+    gap: 5px;
 }
 
 .buttons-container {
@@ -194,34 +216,34 @@ box-shadow: 16px -10px 15px 0px #000000;
 }
 
 button {
-    background-color: lightseagreen;
+    background-color: var(--sidebar-color);
+    color: white;
     text-decoration: none;
-    border: none;
-    padding: 10px 30px 10px 30px;
     font-size: 0.8em;
+    font-weight: 600;
+    border: none;
     border-radius: 20px;
+    padding: 10px 30px 10px 30px;
     
 }
 
 /*MAIN-CONTENT*/
 
 .main-content {
-    background-color: blueviolet;
+    background-color: var(--main-content-background);
     grid-column: 2 / 3;
     grid-row: 2 / 4;
     display: grid;
     grid-template: 1fr 1fr / 4fr 1fr;
     padding: 30px 30px 30px 15px;
     grid-gap: 30px;
-    /*-webkit-box-shadow: 16px -1px 15px 0px rgba(0,0,0,0.19); 
-box-shadow: 16px -1px 15px 0px rgba(0,0,0,0.19);*/
 -webkit-box-shadow: 16px 49px 15px 0px rgba(0,0,0,0.96); 
 box-shadow: 16px 49px 15px 0px rgba(0,0,0,0.96);
 
 }
 
 .projects-container {
-    background-color: darkgoldenrod;
+    background-color: var(--main-content-background);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
@@ -236,22 +258,19 @@ box-shadow: 16px 49px 15px 0px rgba(0,0,0,0.96);
 }
 
 .project-card {
-    background-color: cornflowerblue;
+    background-color: var(--header-color);
     height: 200px;
     border-radius: 10px;
-    /*padding-bottom: 20px;*/
     padding: 20px;
-    border-left: 10px solid grey;
+    border-left: 10px solid var(--border-color);
     -webkit-box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21); 
 box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21);
 }
 
 .project {
-    /*padding: 20px;*/
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /*border-left: 10px solid grey;*/
 }
 
 
@@ -268,11 +287,14 @@ p {
     margin-bottom: 20px;
 }
 
+.text-container>p {
+    color: var(--p-text-color);
+}
+
 .project-icons {
     display: flex;
     align-self: flex-end;
     gap: 20px;
-    /*padding-bottom: 20px;*/
     margin-top: -10px;
 }
 
@@ -282,7 +304,7 @@ p {
 }
 
 .annoucements-container {
-    background-color: darkseagreen;
+    background-color: var(--main-content-background);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     grid-gap: 20px;
@@ -294,7 +316,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    background-color: beige;
+    background-color: var(--header-color);
     border-radius: 10px;
     padding: 20px;
     -webkit-box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21); 
@@ -308,17 +330,18 @@ box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21);
 
 .annoucement-text {
     font-size: 0.8rem;
+    color: var(--p-text-color)
 }
 
-.middle {
-    border-top: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
+.annoucement.middle {
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .trending-container {
-    background-color: lightblue;
+    background-color: var(--main-content-background);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
@@ -327,7 +350,7 @@ box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21);
 }
 
 .trending-grid {
-    background-color: beige;
+    background-color: var(--header-color);
     display: grid;
     grid-template-columns: 1fr;
     border-radius: 10px;
@@ -338,9 +361,6 @@ box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21);
 box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21);
 }
 
-/*.trending-events {
-    gap: 20px;
-}*/
 
 .event {
     display: flex;
@@ -352,9 +372,12 @@ box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.21);
     display: flex;
     flex-direction: column;
     font-size: 1rem;
-    /*align-items: center;*/
     justify-content: center;
     gap: 5px;
+}
+
+.event-name {
+    color: var(--p-text-color);
 }
 
 .event-icon {
